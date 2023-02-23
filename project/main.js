@@ -82,3 +82,13 @@ export const caesar = function(a, b) {
     }
     return arr.join("");
 };
+
+export const arrayAnalysis = (arr)=>{
+     
+    return {
+        average: arr.reduce((sum, item) => sum+item, 0)/ arr.length,
+        min: Math.min(...arr),
+        max: Math.max(...arr),
+        length: arr.length,
+    };
+};
